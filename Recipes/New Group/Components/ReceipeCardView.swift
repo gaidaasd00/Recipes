@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct RecepeCardView: View {
-    var recepe: Recepe
+struct RecipeCardView: View {
+    var recipe: Recipe
     var body: some View {
         VStack {
-            AsyncImage(url: URL(string: recepe.image)) { image in
+            AsyncImage(url: URL(string: recipe.image)) { image in
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .overlay {
-                        Text(recepe.name)
+                        Text(recipe.name)
                             .font(.headline)
                             .foregroundColor(.white)
                             .frame(minWidth: 136)
@@ -30,7 +30,7 @@ struct RecepeCardView: View {
                     .frame(width: 40, height: 40, alignment: .center)
                     .foregroundColor(.white.opacity(0.7))
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                Text(recepe.name)
+                Text(recipe.name)
                     .font(.headline)
                     .foregroundColor(.white)
                     .frame(minWidth: 136)
@@ -52,6 +52,6 @@ struct RecepeCardView: View {
 
 struct RecepeCardView_Previews: PreviewProvider {
     static var previews: some View {
-        RecepeCardView(recepe: Recepe.all[0])
+        RecipeCardView(recipe: Recipe.all[0])
     }
 }

@@ -10,8 +10,18 @@ import SwiftUI
 struct CategoriesView: View {
     var body: some View {
         NavigationView {
-            Text("Categories")
-                .navigationTitle("Categories")
+            List {
+                ForEach(Category.allCases) { category in
+                    NavigationLink {
+                        ScrollView {
+                            RecipeListView(recipes: Recipes.all.filter($0 == category.rowValue))
+                        }
+                    } leble
+                    Text(category.rawValue + "s")
+                    
+                }
+            }
+            .navigationTitle("Categories")
         }
     }
 }

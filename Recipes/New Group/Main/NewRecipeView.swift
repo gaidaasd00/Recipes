@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewRecepeView: View {
+struct NewRecipeView: View {
     var body: some View {
         NavigationView {
             Text("New Recipe")
@@ -16,8 +16,8 @@ struct NewRecepeView: View {
     }
 }
 
-struct NewRecepeView_Previews: PreviewProvider {
+struct NewRecipeView_Previews: PreviewProvider {
     static var previews: some View {
-        NewRecepeView()
+        NewRecipeView()
     }
 }

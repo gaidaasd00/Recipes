@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct RecepeListView: View {
-    let recepes: [Recepe]
+struct RecipeListView: View {
+    let recipes: [Recipe]
     
     var body: some View {
         VStack {
             HStack {
-                Text("\(recepes.count) \(recepes.count > 1 ? "Recepes" : "Resepe")")
+                Text("\(recipes.count) \(recipes.count > 1 ? "Recipes" : "Resepe")")
                     .font(.headline)
                     .fontWeight(.medium)
                     .opacity(0.7)
@@ -21,8 +21,10 @@ struct RecepeListView: View {
                 Spacer()
             }
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 160),spacing: 15)], spacing: 15) {
-                ForEach(recepes) { recepe in
-                    RecepeCardView(recepe: recepe)
+                ForEach(recipes) { recepe in
+                    NavigationLink(destination: RecipeView(recipe: recepe)) {
+                        RecipeCardView(recipe: recepe)
+                    }
                 }
             }
             .padding(.top)
@@ -31,10 +33,10 @@ struct RecepeListView: View {
     }
 }
 
-struct RecepeListView_Previews: PreviewProvider {
+struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
         ScrollView {
-            RecepeListView(recepes: Recepe.all)
+            RecipeListView(recipes: Recipe.all)
         }
     }
 }

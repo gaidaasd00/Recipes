@@ -20,7 +20,7 @@ struct TabBarView: View {
                     Label("Categories", systemImage: "tray.full")
                 }
             
-            NewRecepeView()
+            NewRecipeView()
                 .tabItem {
                     Label("New", systemImage: "plus")
                 }
