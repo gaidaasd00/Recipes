@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RecipeView: View {
-    let recipe: Recipe
+    var recipe: Recipe
+    
     var body: some View {
         ScrollView {
             AsyncImage(url: URL(string: recipe.image)) { image in
@@ -24,7 +25,7 @@ struct RecipeView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
             .frame(height: 300)
-            background(
+            .background(
                 LinearGradient(
                     gradient: Gradient(colors: [.gray.opacity(0.3), .yellow]),
                     startPoint: .top,
@@ -37,31 +38,31 @@ struct RecipeView: View {
                     .bold()
                     .multilineTextAlignment(.center)
                 
-                VStack(alignment: .leading,spacing: 20) {
-                    if !recipe.discription.isEmpty {
-                        Text(recipe.discription)
+                VStack(alignment: .leading, spacing: 30) {
+                    Text(recipe.discription)
+                
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Ingredients")
+                            .font(.headline)
+                        
+                        Text(recipe.ingredients)
                     }
-                    if !recipe.ingredients.isEmpty {
-                        VStack(alignment: .leading,spacing: 20) {
-                            Text("Ingredients")
-                                .font(.headline)
-                            Text(recipe.ingredients)
-                        }
-                    }
-                    if !recipe.directions.isEmpty {
-                        VStack(alignment: .leading, spacing: 20) {
-                            Text("Directions")
-                            Text(recipe.directions)
-                        }
+                    
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Directions")
+                            .font(.headline)
+                        
+                        Text(recipe.directions)
                     }
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
             .padding(.horizontal)
         }
-        .ignoresSafeArea(.container,edges: .top)
+        .ignoresSafeArea(.container, edges: .top)
     }
 }
+
 
 
 struct RecipeView_Previews: PreviewProvider {

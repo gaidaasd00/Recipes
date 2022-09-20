@@ -15,6 +15,7 @@ struct HomeView: View {
             }
             .navigationTitle("My Recepes")
         }
+        
     }
 }
 

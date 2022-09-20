@@ -13,21 +13,21 @@ struct CategoriesView: View {
             List {
                 ForEach(Category.allCases) { category in
                     NavigationLink {
-                        ScrollView {
-                            RecipeListView(recipes: Recipes.all.filter($0 == category.rowValue))
-                        }
-                    } leble
-                    Text(category.rawValue + "s")
-                    
+                        CategoryView(category: category)
+                    } label: {
+                        Text(category.rawValue + "s")
+                    }
                 }
             }
-            .navigationTitle("Categories")
+                .navigationTitle("Catigories")
         }
     }
 }
 
-struct CategoriesView_Previews: PreviewProvider {
-    static var previews: some View {
-        CategoriesView()
-    }
+
+    struct CategoriesView_Previews: PreviewProvider {
+        static var previews: some View {
+            CategoriesView()
+        }
 }
+

@@ -7,7 +7,7 @@
 
 import Foundation
 enum Category: String, CaseIterable, Identifiable {
-    var id: String {self.rawValue}
+    var id: String { self.rawValue }
     
     case breakfast = "Breakfast"
     case soup = "Soup"
@@ -60,7 +60,7 @@ Meat on the bone - 800 g
         Water - 2.5 l
         Sour cream (for serving) - to taste
 """,
-        directions: "",
+        directions: "asdasdalsdasdalsdlalsdadasdada",
         category: "Coup",
         dataPublishid: "25.04.18",
         url: "https://www.russianfood.com/recipes/recipe.php?rid=145861"
