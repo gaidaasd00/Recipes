@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC122A5C28DB8837001644A7 /* AddRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC122A5B28DB8837001644A7 /* AddRecipeView.swift */; };
 		CC1E66C828D64FB8008E335C /* RecipesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1E66C728D64FB8008E335C /* RecipesApp.swift */; };
 		CC1E66CA28D64FB8008E335C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1E66C928D64FB8008E335C /* ContentView.swift */; };
 		CC1E66CC28D64FBA008E335C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1E66CB28D64FBA008E335C /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC122A5B28DB8837001644A7 /* AddRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecipeView.swift; sourceTree = "<group>"; };
 		CC1E66C428D64FB8008E335C /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1E66C728D64FB8008E335C /* RecipesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesApp.swift; sourceTree = "<group>"; };
 		CC1E66C928D64FB8008E335C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				CC28697928D8CC04006A2CF9 /* RecipeView.swift */,
 				CC83D5F128DA23F4003392C5 /* CategoryView.swift */,
+				CC122A5B28DB8837001644A7 /* AddRecipeView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC122A5C28DB8837001644A7 /* AddRecipeView.swift in Sources */,
 				CC1E66E528D65120008E335C /* SettingsView.swift in Sources */,
 				CC1E66DF28D650E6008E335C /* CategoriesView.swift in Sources */,
 				CC1E66E828D65380008E335C /* TabBarView.swift in Sources */,
