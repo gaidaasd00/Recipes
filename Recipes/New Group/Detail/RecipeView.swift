@@ -15,7 +15,7 @@ struct RecipeView: View {
             AsyncImage(url: URL(string: recipe.image)) { image in
                 image
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
+                    .aspectRatio(contentMode: .fit)
             } placeholder: {
                 Image(systemName: "photo")
                     .resizable()

@@ -14,10 +14,9 @@ struct RecipeListView: View {
         VStack {
             HStack {
                 Text("\(recipes.count) \(recipes.count > 1 ? "Recipes" : "Resepe")")
-                    .font(.headline)
+                    .font(.title)
                     .fontWeight(.medium)
                     .opacity(0.7)
-                
                 Spacer()
             }
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 160),spacing: 15)], spacing: 15) {

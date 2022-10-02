@@ -66,24 +66,60 @@ Meat on the bone - 800 g
         url: "https://www.russianfood.com/recipes/recipe.php?rid=145861"
     ),
     Recipe(
-        name: "",
-        image: "",
-        discription: "",
-        ingredients: "",
-        directions: "",
-        category: "Coup",
-        dataPublishid: "",
-        url: ""
+        name: "Pelmeni",
+        image: "https://img1.russianfood.com/dycontent/images_upl/361/big_360017.jpg",
+        discription: "Recipe for dumplings dough with hot water and vegetable oil. You will really enjoy working with this dough, it is very elastic, does not tear, does not boil, molds well and tolerates freezing well. Feel free to add a little water to make the minced meat for the filling juicier. I also add a little fat if the meat is lean. The dumplings are very tasty and juicy.",
+        ingredients: """
+        Products
+        Sifted wheat flour - 500 g + for working with dough
+        Hot water (70-75 degrees) - 250 ml
+        Egg (small) - 1 pc.
+        Salt - 1 teaspoon without a slide
+        Odorless vegetable oil - 25 ml
+        *
+        For filling:
+        Meat (beef and pork) - 550 g
+        Onion - 200 g
+        Salo (optional, if the meat is lean) - 30 g
+        Water - 70-80 g (according to the consistency of minced meat)
+        Salt - 1 teaspoon without a slide
+        Ground black pepper - to taste
+        *
+        For cooking:
+        Bay leaf - to taste
+        Salt - to taste
+        Black peppercorns - to taste
+        Onion - 1/4 pc.
+        *
+        For submission:
+        Butter - to taste
+""",
+        directions: "The best of the best pelmeni",
+        category: "Main",
+        dataPublishid: "22.01.2020",
+        url: "https://www.russianfood.com/recipes/recipe.php?rid=152967"
     ),
     Recipe(
-        name: "",
-        image: "",
-        discription: "",
-        ingredients: "",
-        directions: "",
-        category: "Coup",
-        dataPublishid: "",
-        url: ""
+        name: "Olive",
+        image: "https://img1.russianfood.com/dycontent/images_upl/209/big_208927.jpg",
+        discription: "Traditional salad 'Olivier', without which the New Year's festive feast is indispensable.",
+        ingredients: """
+        Products (for 5 servings)
+        Potatoes - 5 pcs.
+        Carrot - 1 pc. (large)
+        Pickled cucumbers (barrel) - 4-5 pcs.
+        Canned green peas - 5-6 tbsp. l.
+        Boiled sausage (doctor's) - 200 g
+        Eggs - 4 pcs.
+        Mayonnaise - 150 g
+        Sour cream - 50 g
+        Salt - to taste
+        Ground black pepper - to taste
+""",
+        directions: "This is the best olive"  ,
+        category: "Salat",
+        dataPublishid: "17.12.2009",
+        url: "https://www.russianfood.com/recipes/recipe.php?rid=142133"
     ),
     Recipe(
         name: "",
